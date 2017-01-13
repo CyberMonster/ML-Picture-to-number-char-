@@ -6,3 +6,11 @@ C:\Users\Stig\Documents\SharpDevelop Projects\ML01(Number_Char)\ML01(Number_Char
 C:\Users\Stig\Documents\SharpDevelop Projects\ML01(Number_Char)\ML01(Number_Char)\obj\Debug\ML01(Number_Char).pdb
 C:\Users\Stig\Documents\SharpDevelop Projects\ML01(Number_Char)\ML01(Number_Char)\obj\Debug\ML01_Number_Char_.MainForm.resources
 C:\Users\Stig\Documents\SharpDevelop Projects\ML01(Number_Char)\ML01(Number_Char)\obj\Debug\ML01(Number_Char).csproj.GenerateResource.Cache
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\bin\Debug\ML01(Number_Char).exe.config
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\obj\Debug\ML01(Number_Char).exe
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\obj\Debug\ML01(Number_Char).pdb
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\bin\Debug\ML01(Number_Char).exe
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\bin\Debug\ML01(Number_Char).pdb
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\obj\Debug\ML01(Number_Char).csprojResolveAssemblyReference.cache
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\obj\Debug\ML01_Number_Char_.MainForm.resources
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\main net\ML01(Number_Char)\obj\Debug\ML01(Number_Char).csproj.GenerateResource.Cache
