@@ -23,41 +23,44 @@ namespace MakePictureFromChar
 		{
 			InitializeComponent();
             this.textBox4.Text = System.Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + System.IO.Path.DirectorySeparatorChar + @"ML_DataSet" + System.IO.Path.DirectorySeparatorChar + @"CharFromPicture";
-            if (!System.IO.File.Exists(this.textBox4.Text))
+            if (System.IO.Directory.Exists(this.textBox4.Text))
             {
-                System.IO.Directory.CreateDirectory(this.textBox4.Text);
+                List<string> ExistedDefaultNamedFolders = new List<string>();
+                bool IsDefNameEqual;
+                foreach (string Path in System.IO.Directory.GetDirectories(this.textBox4.Text).Select(z => System.IO.Path.GetFileName(z)).ToArray())
+                {
+                    IsDefNameEqual = true;
+                    if (Path.Length < MainForm.DefaultsFolderName.Length)
+                    {
+                        IsDefNameEqual = false;
+                    }
+                    else
+                    {
+                        int Counter;
+                        for (Counter = 0; Counter < MainForm.DefaultsFolderName.Length; ++Counter)
+                        {
+                            if (Path[Counter] != MainForm.DefaultsFolderName[Counter])
+                            {
+                                IsDefNameEqual = false;
+                                break;
+                            }
+                        }
+                        if (!IsDefNameEqual)
+                        {
+                            continue;
+                        }
+                        ExistedDefaultNamedFolders.Add(Path.Substring(Counter));
+                    }
+                }
+                int ParseResult;
+                this.textBox4.Text += System.IO.Path.DirectorySeparatorChar + MainForm.DefaultsFolderName + ((ExistedDefaultNamedFolders.Count != 0) ? (ExistedDefaultNamedFolders.Select(z => int.TryParse(z, out ParseResult) ? ParseResult : -1).Max() + 1).ToString() : "0");
+            }
+            else
+            {
+                this.textBox4.Text += System.IO.Path.DirectorySeparatorChar + MainForm.DefaultsFolderName + "0";
             }
 
-            List<string> ExistedDefaultNamedFolders = new List<string>();
-            bool IsDefNameEqual;
-            foreach (string Path in System.IO.Directory.GetDirectories(this.textBox4.Text).Select(z => System.IO.Path.GetFileName(z)).ToArray())
-            {
-                IsDefNameEqual = true;
-                if (Path.Length < MainForm.DefaultsFolderName.Length)
-                {
-                    IsDefNameEqual = false;
-                }
-                else
-                {
-                    int Counter;
-                    for (Counter = 0; Counter < MainForm.DefaultsFolderName.Length; ++Counter)
-                    {
-                        if (Path[Counter] != MainForm.DefaultsFolderName[Counter])
-                        {
-                            IsDefNameEqual = false;
-                            break;
-                        }
-                    }
-                    if (!IsDefNameEqual)
-                    {
-                        continue;
-                    }
-                    ExistedDefaultNamedFolders.Add(Path.Substring(Counter));
-                }
-            }
-            int ParseResult;
-            this.textBox4.Text += System.IO.Path.DirectorySeparatorChar + MainForm.DefaultsFolderName + ((ExistedDefaultNamedFolders.Count != 0) ? (ExistedDefaultNamedFolders.Select(z => int.TryParse(z, out ParseResult) ? ParseResult : -1).Max() + 1).ToString() : "0");
-		}
+        }
 		void TextBox1Click(object sender, EventArgs e)
 		{
 			this.fontDialog1.ShowDialog();
