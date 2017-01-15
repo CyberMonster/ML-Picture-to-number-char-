@@ -6,3 +6,11 @@ C:\Users\Stig\Documents\SharpDevelop Projects\MakePictureFromChar\MakePictureFro
 C:\Users\Stig\Documents\SharpDevelop Projects\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.pdb
 C:\Users\Stig\Documents\SharpDevelop Projects\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.MainForm.resources
 C:\Users\Stig\Documents\SharpDevelop Projects\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.csproj.GenerateResource.Cache
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\bin\Debug\MakePictureFromChar.exe.config
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.exe
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.pdb
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\bin\Debug\MakePictureFromChar.exe
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\bin\Debug\MakePictureFromChar.pdb
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.csprojResolveAssemblyReference.cache
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.MainForm.resources
+C:\Users\Oleg\Documents\GitHub\ML(Picture to number or char)\learn\MakePictureFromChar\MakePictureFromChar\obj\Debug\MakePictureFromChar.csproj.GenerateResource.Cache
