@@ -19,9 +19,20 @@ namespace ML01_Number_Char_
 		public System.Drawing.Bitmap Exp_;
 		public string PathToExp_;
 		public char Mean;
-		public Node(char Mean, double Pow_ = 0.0, string XpPath = @"%username%\", System.Drawing.Bitmap Xp = null)
+        /// Alt + t + d?
+        /// 
+        /// TODO:
+        /// Make knowleage functions
+        ///  Read from data
+        ///  Write new XP
+        /// Make compare functions
+        ///  Proportionally comparing
+        public Node(char Mean, string XpPath = @"%username%\", double Pow_ = 0.0, System.Drawing.Bitmap Xp = null)
 		{
 			this.Mean = Mean;
+            this.PathToExp_ = XpPath;
+            this.Power = Pow_;
+            this.Exp_ = Xp;
 		}
 		public static void SaveExp_ (Node Val)
 		{
